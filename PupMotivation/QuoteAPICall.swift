@@ -12,6 +12,7 @@ import UIKit
 var quote = ""
 var author = ""
 var myQuoteSelection: String?
+var quoteMissing = true
 
 
 // set up json objects
@@ -37,7 +38,7 @@ func getQuote(selection: String, completion: @escaping () -> Void) {
     let request = URLRequest(url: unwrappedURL)
     let task = URLSession.shared.dataTask(with: request) { data, _, error in
         let decoder = JSONDecoder()
-        guard let unwrappedDATA = data else {print("troublw with data"); return}
+        guard let unwrappedDATA = data else {print("trouble with data"); return}
         do {
             // set up string and assign result to quote
             let answer = try decoder.decode(JSON.self, from: unwrappedDATA)
@@ -45,9 +46,12 @@ func getQuote(selection: String, completion: @escaping () -> Void) {
                 quote = i.quote
                 author = i.author
             }
+            quoteMissing = false
             completion()
         }
         catch {
+            quoteMissing = true
+            completion()
             print("trouble with quote api call", error.localizedDescription)
         }
     }

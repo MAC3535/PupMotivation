@@ -33,9 +33,24 @@ class ViewController: UIViewController {
         guard let unwrappeedQuote = myQuoteSelection else {return}
         
         getDogPicture(breed: unwrappedBreed) {
-            getQuote(selection: unwrappeedQuote) {
+            // handle error where dog API data is missisng
+            if dogMissing == true {
                 DispatchQueue.main.async {
-                    self.performSegue(withIdentifier: "toQuoteView", sender: self)
+                    self.dogMissingError()
+                }
+            } else {
+                getQuote(selection: unwrappeedQuote) {
+                    // handle errer where quote API data is missing
+                    if quoteMissing == true {
+                        DispatchQueue.main.async {
+                            self.dogMissingError()
+                        }
+                    } else {
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "toQuoteView", sender: self)
+                        }
+                    }
+                    
                 }
             }
         }
@@ -59,6 +74,16 @@ class ViewController: UIViewController {
         selectedBreed.text = "Breed: \(answer.uppercased())"
         myBreedSelection = answer
     }
+    
+    // set up dog breed error handling
+    func dogMissingError() {
+        let ac = UIAlertController(title: "SORRY", message: "Please try another dog breed.", preferredStyle: .alert)
+        let done = UIAlertAction(title: "OK", style: .default)
+        
+        ac.addAction(done)
+        present(ac, animated: true)
+    }
+   
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {

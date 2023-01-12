@@ -197,8 +197,8 @@
                                     <constraint firstItem="Upr-0g-uJ1" firstAttribute="top" secondItem="gac-wP-fFl" secondAttribute="top" id="zP9-W0-QuL"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-eX-U9U">
-                                <rect key="frame" x="5" y="723" width="388" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-eX-U9U">
+                                <rect key="frame" x="5" y="723" width="388" height="95"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -207,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="vQ6-Qj-7a3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vQ6-Qj-7a3" firstAttribute="bottom" secondItem="Qcv-eX-U9U" secondAttribute="bottom" id="InN-JY-vhg"/>
                             <constraint firstItem="gac-wP-fFl" firstAttribute="top" secondItem="vQ6-Qj-7a3" secondAttribute="top" id="SxG-1J-utf"/>
                             <constraint firstItem="vQ6-Qj-7a3" firstAttribute="trailing" secondItem="gac-wP-fFl" secondAttribute="trailing" id="Urb-g8-Xbb"/>
                             <constraint firstItem="vQ6-Qj-7a3" firstAttribute="bottom" secondItem="gac-wP-fFl" secondAttribute="bottom" constant="100" id="bol-J3-83J"/>

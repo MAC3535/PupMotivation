@@ -10,6 +10,7 @@ import UIKit
 
 var dogImage = ""
 var myBreedSelection: String?
+var dogMissing = true
 
 struct DogPic: Decodable {
     var message: String
@@ -38,7 +39,7 @@ func getDogPicture(breed: String, completion: @escaping () -> Void) {
     let request = URLRequest(url: unwrappedURL)
     let task = URLSession.shared.dataTask(with: request) { data, _, error in
         let decoder = JSONDecoder()
-        guard let unwrappedDATA = data else {print("troublw with data"); return}
+        guard let unwrappedDATA = data else {print("trouble with data"); return}
         do {
             let answer = try decoder.decode(DogPic.self, from: unwrappedDATA)
             dogImage = answer.message
@@ -47,14 +48,19 @@ func getDogPicture(breed: String, completion: @escaping () -> Void) {
                 do {
                     let data = try Data(contentsOf: newURL)
                     dogPicture = data
+                    dogMissing = false
                     completion()
                 }
                 catch {
+                    dogMissing = true
+                    completion()
                     print(error.localizedDescription)
                 }
             }
         }
         catch {
+            dogMissing = true
+            completion()
             print("trouble with dog api call", error.localizedDescription)
         }
     }
