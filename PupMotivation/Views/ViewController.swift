@@ -40,7 +40,25 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    // set up alert for dog breed search
+    func searchForDogBreed() {
+        
+        let userChoiceController = UIAlertController(title: "SEARCH", message: "Please enter dog breed bellow.", preferredStyle: .alert)
+        userChoiceController.addTextField()
+        
+        let submittedBreed = UIAlertAction(title: "SUBMIT", style: .default) { [weak self, weak userChoiceController] action in
+            guard let answer = userChoiceController?.textFields?[0].text else {return}
+            self?.submit(answer)
+        }
+        userChoiceController.addAction(submittedBreed)
+        present(userChoiceController, animated: true)
+    }
+    
+    func submit(_ answer: String) {
+        selectedBreed.text = "Breed: \(answer.uppercased())"
+        myBreedSelection = answer
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -72,8 +90,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == dogBreedCollectionView {
-            selectedBreed.text = "Breed: \(breeds[indexPath.row].uppercased())"
-            myBreedSelection = breeds[indexPath.row]
+            if indexPath.row == 7 {
+                searchForDogBreed()
+            } else {
+                selectedBreed.text = "Breed: \(breeds[indexPath.row].uppercased())"
+                myBreedSelection = breeds[indexPath.row]
+            }
+           
         } else {
             selectedCategory.text = "Category: \(categories[indexPath.row].uppercased())"
             myQuoteSelection = categories[indexPath.row]

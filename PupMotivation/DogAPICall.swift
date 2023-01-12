@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 var dogImage = ""
 var myBreedSelection: String?
 
@@ -15,12 +17,19 @@ struct DogPic: Decodable {
 
 
 func getDogPicture(breed: String, completion: @escaping () -> Void) {
+    var answerBreed: String
     var stringURL: String
+    // remove space from breed and lowercase for API use
+    answerBreed = breed.lowercased()
+    let finalBreed = String(answerBreed.filter { !" \n\t\r".contains($0) })
     
+    print(finalBreed)
     if breed == "RANDOM" {
         stringURL = "https://dog.ceo/api/breeds/image/random"
+    } else if breeds.contains(breed) == false {
+        stringURL = "https://dog.ceo/api/breed/\(finalBreed)/images/random"
     } else {
-        stringURL = "https://dog.ceo/api/breed/\(breed.lowercased())/images/random"
+        stringURL = "https://dog.ceo/api/breed/\(finalBreed)/images/random"
     }
     
     let url = URL(string: stringURL)

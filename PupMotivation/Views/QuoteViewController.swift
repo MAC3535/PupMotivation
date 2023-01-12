@@ -20,7 +20,10 @@ class QuoteViewController: UIViewController {
         
         guard let answer = dogPicture else {return}
         realPicture.image = UIImage(data: answer)
-        quoteLabel.text = quote
+        quoteLabel.text = """
+        \(quote)
+        - \(author)
+        """
         
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(navButtonPressed))
