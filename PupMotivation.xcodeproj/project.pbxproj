@@ -88,6 +88,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7129A037297A3E6A00550E45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7178A961296675D10051B451 /* CollectionCells.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7129A038297A3EA600550E45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71B88B2E2967675B005A8511 /* QuoteAPICall.swift */,
+				71990A742960EAE0008C29AB /* DogAPICall.swift */,
+				71ED4ECC2963C747000336AD /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7129A039297A3EC000550E45 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				71BCE7E8295C9FD200F3CE83 /* AppDelegate.swift */,
+				71BCE7EE295C9FD200F3CE83 /* Main.storyboard */,
+				71BCE7EA295C9FD200F3CE83 /* SceneDelegate.swift */,
+				71BCE7F3295C9FD300F3CE83 /* LaunchScreen.storyboard */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		71BCE7DC295C9FD200F3CE83 = {
 			isa = PBXGroup;
 			children = (
@@ -111,16 +140,11 @@
 		71BCE7E7295C9FD200F3CE83 /* PupMotivation */ = {
 			isa = PBXGroup;
 			children = (
-				71BCE818295CA38400F3CE83 /* Views */,
-				71BCE7E8295C9FD200F3CE83 /* AppDelegate.swift */,
-				71990A742960EAE0008C29AB /* DogAPICall.swift */,
-				71B88B2E2967675B005A8511 /* QuoteAPICall.swift */,
-				7178A961296675D10051B451 /* CollectionCells.swift */,
-				71ED4ECC2963C747000336AD /* Models.swift */,
-				71BCE7EA295C9FD200F3CE83 /* SceneDelegate.swift */,
-				71BCE7EE295C9FD200F3CE83 /* Main.storyboard */,
+				7129A039297A3EC000550E45 /* Helper */,
+				7129A038297A3EA600550E45 /* Model */,
+				7129A037297A3E6A00550E45 /* View */,
+				71BCE818295CA38400F3CE83 /* Controller */,
 				71BCE7F1295C9FD300F3CE83 /* Assets.xcassets */,
-				71BCE7F3295C9FD300F3CE83 /* LaunchScreen.storyboard */,
 				71BCE7F6295C9FD300F3CE83 /* Info.plist */,
 			);
 			path = PupMotivation;
@@ -143,14 +167,14 @@
 			path = PupMotivationUITests;
 			sourceTree = "<group>";
 		};
-		71BCE818295CA38400F3CE83 /* Views */ = {
+		71BCE818295CA38400F3CE83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				71BCE7EC295C9FD200F3CE83 /* ViewController.swift */,
 				71990A722960E9DE008C29AB /* QuoteViewController.swift */,
 				71BCE819295CA49E00F3CE83 /* FavoritesViewController.swift */,
 			);
-			path = Views;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

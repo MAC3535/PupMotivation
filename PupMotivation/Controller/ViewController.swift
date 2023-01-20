@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  PupMotivation
-//
-//  Created by Anthony Cortez on 12/28/22.
-//
 
 import UIKit
 
@@ -29,6 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goButtonPressed(sender: UIButton) {
+        
         guard let unwrappedBreed = myBreedSelection else {return}
         guard let unwrappeedQuote = myQuoteSelection else {return}
         
@@ -103,10 +98,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = categorycollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoryCell
         cell.categoryLabel.text = categories[indexPath.row].uppercased()
+        cell.layer.cornerRadius = 25
         
         if collectionView == dogBreedCollectionView {
             let cellTwo = dogBreedCollectionView.dequeueReusableCell(withReuseIdentifier: "cellTwo", for: indexPath) as! DogBreedCell
             cellTwo.breedLabel.text = breeds[indexPath.row].uppercased()
+            cellTwo.layer.cornerRadius = 25
             return cellTwo
         }
         

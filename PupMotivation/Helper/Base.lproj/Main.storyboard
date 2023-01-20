@@ -20,18 +20,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUP Motivation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEo-jM-poV" userLabel="logoTitle">
                                 <rect key="frame" x="91" y="203" width="211" height="46.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
-                                <color key="textColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.92156862745098034" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Je-ss-eTE" userLabel="sloganLabel">
                                 <rect key="frame" x="0.0" y="259.33333333333331" width="393" height="28"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                <color key="textColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.92156862750000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sbf-7c-6Yj">
                                 <rect key="frame" x="0.0" y="426" width="393" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="wrz-lG-1pC"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                                 <constraint firstItem="GI7-y9-ewC" firstAttribute="centerY" secondItem="OZg-kn-ssB" secondAttribute="centerY" id="mYQ-RF-Jff"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.67843137249999996" green="0.5568627451" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="categoryLabel" destination="GI7-y9-ewC" id="Lsq-sy-0f0"/>
                                         </connections>
@@ -72,12 +72,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfr-BZ-MOC">
                                 <rect key="frame" x="15" y="383" width="363" height="28"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                <color key="textColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.92156862750000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PIL-h0-CsF">
                                 <rect key="frame" x="0.0" y="601" width="393" height="100"/>
-                                <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="yZj-Fy-79N"/>
                                 </constraints>
@@ -107,7 +107,7 @@
                                                 <constraint firstItem="4np-tD-rWK" firstAttribute="centerY" secondItem="vFq-Ue-c38" secondAttribute="centerY" id="nxn-1u-UED"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.94117647059999998" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.67843137249999996" green="0.5568627451" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="breedLabel" destination="4np-tD-rWK" id="vUK-bq-7ZZ"/>
                                         </connections>
@@ -117,11 +117,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-kd-xP2" userLabel="Selected Breed">
                                 <rect key="frame" x="15" y="558" width="363" height="28"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.92156862750000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJr-Kk-4Uy">
-                                <rect key="frame" x="164.66666666666666" y="709" width="63.666666666666657" height="51.333333333333371"/>
+                                <rect key="frame" x="164.66666666666666" y="726" width="63.666666666666657" height="51.333333333333371"/>
+                                <color key="tintColor" red="0.67843137254901964" green="0.55686274509803924" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="GO">
                                     <fontDescription key="titleFontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
@@ -132,7 +133,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.21568627450980393" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PIL-h0-CsF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2yD-7Y-RTd"/>
                             <constraint firstItem="sbf-7c-6Yj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Hw-ru-2tw"/>
@@ -146,7 +147,7 @@
                             <constraint firstItem="PIL-h0-CsF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="225" id="Uwg-K4-FxL"/>
                             <constraint firstItem="sbf-7c-6Yj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bXE-L9-4L8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIL-h0-CsF" secondAttribute="trailing" id="f14-Z1-8gS"/>
-                            <constraint firstItem="NJr-Kk-4Uy" firstAttribute="top" secondItem="PIL-h0-CsF" secondAttribute="bottom" constant="8" id="f4R-50-dsp"/>
+                            <constraint firstItem="NJr-Kk-4Uy" firstAttribute="top" secondItem="PIL-h0-CsF" secondAttribute="bottom" constant="25" id="f4R-50-dsp"/>
                             <constraint firstItem="PIL-h0-CsF" firstAttribute="top" secondItem="OY0-kd-xP2" secondAttribute="bottom" constant="15" id="fDa-K0-cPX"/>
                             <constraint firstItem="sbf-7c-6Yj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hlx-VU-Am3"/>
                             <constraint firstItem="OY0-kd-xP2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ksX-qf-YMp"/>
@@ -158,7 +159,9 @@
                             <constraint firstItem="vEo-jM-poV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x68-tY-WxX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="UkN-UH-u4E"/>
+                    <navigationItem key="navigationItem" id="UkN-UH-u4E">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="sdP-ZQ-qvK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="appTitle" destination="vEo-jM-poV" id="ED0-ys-Hc6"/>
                         <outlet property="categorycollectionView" destination="sbf-7c-6Yj" id="TfD-YF-WHn"/>
@@ -182,10 +185,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gac-wP-fFl" userLabel="dogView">
-                                <rect key="frame" x="0.0" y="103" width="393" height="615"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="727"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-0g-uJ1">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="615"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="727"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -197,30 +200,32 @@
                                     <constraint firstItem="Upr-0g-uJ1" firstAttribute="top" secondItem="gac-wP-fFl" secondAttribute="top" id="zP9-W0-QuL"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qcv-eX-U9U">
-                                <rect key="frame" x="5" y="723" width="388" height="95"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" editable="NO" text="TEXT" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGe-vY-cfP">
+                                <rect key="frame" x="0.0" y="727" width="393" height="91"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.92156862750000001" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vQ6-Qj-7a3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.2156862745" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="vQ6-Qj-7a3" firstAttribute="bottom" secondItem="Qcv-eX-U9U" secondAttribute="bottom" id="InN-JY-vhg"/>
-                            <constraint firstItem="gac-wP-fFl" firstAttribute="top" secondItem="vQ6-Qj-7a3" secondAttribute="top" id="SxG-1J-utf"/>
+                            <constraint firstItem="HGe-vY-cfP" firstAttribute="top" secondItem="gac-wP-fFl" secondAttribute="bottom" id="6cD-1t-nKP"/>
+                            <constraint firstAttribute="trailing" secondItem="HGe-vY-cfP" secondAttribute="trailing" id="9Wg-Dl-OSy"/>
+                            <constraint firstItem="HGe-vY-cfP" firstAttribute="leading" secondItem="3wZ-y9-uP1" secondAttribute="leading" id="K2u-Al-t5j"/>
+                            <constraint firstItem="HGe-vY-cfP" firstAttribute="centerX" secondItem="3wZ-y9-uP1" secondAttribute="centerX" id="KEb-31-jGc"/>
+                            <constraint firstItem="gac-wP-fFl" firstAttribute="top" secondItem="3wZ-y9-uP1" secondAttribute="top" id="SxG-1J-utf"/>
                             <constraint firstItem="vQ6-Qj-7a3" firstAttribute="trailing" secondItem="gac-wP-fFl" secondAttribute="trailing" id="Urb-g8-Xbb"/>
-                            <constraint firstItem="vQ6-Qj-7a3" firstAttribute="bottom" secondItem="gac-wP-fFl" secondAttribute="bottom" constant="100" id="bol-J3-83J"/>
+                            <constraint firstAttribute="bottom" secondItem="gac-wP-fFl" secondAttribute="bottom" constant="125" id="bol-J3-83J"/>
                             <constraint firstItem="gac-wP-fFl" firstAttribute="leading" secondItem="vQ6-Qj-7a3" secondAttribute="leading" id="d6M-br-yHs"/>
-                            <constraint firstItem="Qcv-eX-U9U" firstAttribute="top" secondItem="gac-wP-fFl" secondAttribute="bottom" constant="5" id="gXA-XZ-eAm"/>
-                            <constraint firstItem="vQ6-Qj-7a3" firstAttribute="trailing" secondItem="Qcv-eX-U9U" secondAttribute="trailing" id="nSJ-xR-2YK"/>
-                            <constraint firstItem="Qcv-eX-U9U" firstAttribute="leading" secondItem="vQ6-Qj-7a3" secondAttribute="leading" constant="5" id="tpq-96-8ma"/>
+                            <constraint firstItem="vQ6-Qj-7a3" firstAttribute="bottom" secondItem="HGe-vY-cfP" secondAttribute="bottom" id="r09-Ld-a1c"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MX9-xo-b7y"/>
                     <connections>
                         <outlet property="picture" destination="gac-wP-fFl" id="Xex-c7-Coi"/>
-                        <outlet property="quoteLabel" destination="Qcv-eX-U9U" id="3Y2-pb-bZd"/>
+                        <outlet property="quoteField" destination="HGe-vY-cfP" id="j2g-I2-fnd"/>
                         <outlet property="realPicture" destination="Upr-0g-uJ1" id="N13-xz-QGo"/>
                     </connections>
                 </viewController>
@@ -259,7 +264,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yYl-mk-aia"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.2156862745" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yYl-mk-aia" firstAttribute="trailing" secondItem="c6r-FP-1Cb" secondAttribute="trailing" id="7XS-5M-hvd"/>
                             <constraint firstItem="c6r-FP-1Cb" firstAttribute="top" secondItem="yYl-mk-aia" secondAttribute="top" id="HAU-hp-GZD"/>
@@ -283,6 +288,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s6v-Up-b1c">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.67843137249999996" green="0.5568627451" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -295,9 +301,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

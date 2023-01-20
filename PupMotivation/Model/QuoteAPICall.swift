@@ -1,9 +1,3 @@
-//
-//  QuoteAPICall.swift
-//  PupMotivation
-//
-//  Created by Anthony Cortez on 1/5/23.
-//
 
 import Foundation
 import UIKit

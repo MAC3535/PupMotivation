@@ -1,9 +1,4 @@
-//
-//  dataJSON.swift
-//  PupMotivation
-//
-//  Created by Anthony Cortez on 12/31/22.
-//
+
 
 import Foundation
 import UIKit

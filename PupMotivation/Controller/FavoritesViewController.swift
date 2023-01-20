@@ -1,9 +1,3 @@
-//
-//  FavoritesViewController.swift
-//  PupMotivation
-//
-//  Created by Anthony Cortez on 12/28/22.
-//
 
 import UIKit
 
