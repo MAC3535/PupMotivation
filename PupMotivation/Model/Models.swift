@@ -16,3 +16,4 @@ var categories: [String] = ["Art", "Funny", "Inspire", "Life", "Love", "Manageme
 var breeds : [String] = ["Terrier", "Shiba", "Pug", "Rottwiler", "Pomeranian", "Chihuahua", "RANDOM", "SEARCH"]
 
 var completedSet: Set<String> = []
+

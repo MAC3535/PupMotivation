@@ -91,6 +91,8 @@
 		7129A037297A3E6A00550E45 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				71BCE7EE295C9FD200F3CE83 /* Main.storyboard */,
+				71BCE7F3295C9FD300F3CE83 /* LaunchScreen.storyboard */,
 				7178A961296675D10051B451 /* CollectionCells.swift */,
 			);
 			path = View;
@@ -110,9 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				71BCE7E8295C9FD200F3CE83 /* AppDelegate.swift */,
-				71BCE7EE295C9FD200F3CE83 /* Main.storyboard */,
 				71BCE7EA295C9FD200F3CE83 /* SceneDelegate.swift */,
-				71BCE7F3295C9FD300F3CE83 /* LaunchScreen.storyboard */,
 			);
 			path = Helper;
 			sourceTree = "<group>";

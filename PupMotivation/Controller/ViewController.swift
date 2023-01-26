@@ -23,34 +23,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goButtonPressed(sender: UIButton) {
-        
-        guard let unwrappedBreed = myBreedSelection else {return}
-        guard let unwrappeedQuote = myQuoteSelection else {return}
-        
-        getDogPicture(breed: unwrappedBreed) {
-            // handle error where dog API data is missisng
-            if dogMissing == true {
-                DispatchQueue.main.async {
-                    self.dogMissingError()
-                }
-            } else {
-                getQuote(selection: unwrappeedQuote) {
-                    // handle errer where quote API data is missing
-                    if quoteMissing == true {
-                        DispatchQueue.main.async {
-                            self.dogMissingError()
-                        }
-                    } else {
-                        DispatchQueue.main.async {
-                            self.performSegue(withIdentifier: "toQuoteView", sender: self)
-                        }
-                    }
-                    
-                }
-            }
-        }
+        fetchDataGroupCall()
     }
-    
     // set up alert for dog breed search
     func searchForDogBreed() {
         
@@ -77,6 +51,41 @@ class ViewController: UIViewController {
         
         ac.addAction(done)
         present(ac, animated: true)
+    }
+    
+    func fetchDataGroupCall() {
+        let group = DispatchGroup()
+        
+        guard let unwrappedBreed = myBreedSelection else {return}
+        guard let unwrappeedQuote = myQuoteSelection else {return}
+        
+        group.enter()
+        getDogPicture(breed: unwrappedBreed) {
+            // handle error where dog API data is missisng
+            if dogMissing == true {
+                DispatchQueue.main.async {
+                    self.dogMissingError()
+                }
+            } else {
+                group.leave()
+            }
+        }
+        group.enter()
+        getQuote(selection: unwrappeedQuote) {
+            // handle errer where quote API data is missing
+            if quoteMissing == true {
+                DispatchQueue.main.async {
+                    self.dogMissingError()
+                }
+            } else {
+                group.leave()
+            }
+        }
+        group.notify(queue: .main) {
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "toQuoteView", sender: self)
+            }
+        }
     }
    
 }
