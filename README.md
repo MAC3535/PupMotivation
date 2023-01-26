@@ -19,5 +19,5 @@ In this project you get the chance to work with the multiple API requests. A dis
 
 Final Thoughts
 
-This project was a good dive into handle mutiple network calls.
+This project was a good dive into handling mutiple network calls.
 
